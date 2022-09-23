@@ -100,5 +100,40 @@
             opacity: .6;
         }
     }
-    
+}
+
+.carrusel {
+      &__info {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                  font-size: 34px;
+            }
+      }
+
+      &__text-artist-info{ 
+            font-size: 21px;
+            
+      }
+
+      &__text-artist-record {
+            display: bloc;
+            border-right: 2px solid gray;
+      }
+
+      &__icons {
+            display:flex;
+            & img {
+                  margin-right: 20px;
+            }
+      }
+
+      &__concert {
+        @include mixins.button(4em, 0, auto, variables.$white,23px, 40px, 6em);
+        border: 1px solid variables.$white;
+        margin: 20px 0px;
+    }
 }
