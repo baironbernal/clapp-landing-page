@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins/mixins';
+
+
+.concerts {
+      margin-top: 8em;
+      display: flex;
+      justify-content: space-between;
+      
+      &__left {
+            padding: 0px 7em;
+      }
+
+      &__title {
+            display: flex;
+            align-items: center;
+            h3{
+                  font-size: 70px;
+            }
+            p{
+                  font-size: 30px;
+            }
+      }
+
+      &__button{
+            @include mixins.button(1em,0,v.$gray,v.$black, 26px, 2em, 9em);
+            margin-top: 20px;
+            font-weight: normal;
+      }
+}

@@ -4,7 +4,7 @@
 @mixin button($padding-x, $padding-y, $background, $color, $font-size, $height, $width) {
     background-color: $background;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     color: $color;
     padding: $padding-y $padding-x;
     height: $height;

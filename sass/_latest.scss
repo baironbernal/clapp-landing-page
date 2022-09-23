@@ -1,0 +1,33 @@
+@use 'variables' as v;
+@use 'mixins/mixins';
+
+.latest {
+      text-align: center;
+      margin-top: 30px;
+
+      &__title {
+            font-size: 32px;
+      }
+
+      .clapp__devices {
+            justify-content: center;
+      }
+
+      &__purple-text {
+            background-color: v.$purple;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 360px;
+            max-height: 700px;
+
+            h1 {
+                  font-size: 70px;
+                  width: 60%;
+            }
+            p{
+                  font-size: 32px;
+            }
+      }
+}

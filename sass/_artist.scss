@@ -1,28 +1,22 @@
 @use 'variables';
 @use 'mixins/mixins';
-
-
-
 .artist {
-      text-align: center;
-      margin-bottom: 40px;
-     &__p-first {
-            font-size: 30px;
-            margin-bottom: 20px;
-     }
-
-     &__p-last {
-      font-size: 23px;
-     }
-
-     h1{
-      font-size: 90px;
-     }
-
-     &__button {
-      @include mixins.button(15px, 20px, variables.$orange, variables.$white, 22px, 4em, 260px);
-      margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    &__p-first {
+        font-size: 30px;
+        margin-bottom: 20px;
     }
-
-      
+    &__p-last {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 90px;
+        margin-bottom: 20px;
+    }
+    &__button {
+        @include mixins.button(15px, 20px, variables.$orange, variables.$white, 22px, 4em, 260px);
+        margin: 0 auto;
+    }
 }
