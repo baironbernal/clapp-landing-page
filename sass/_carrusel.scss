@@ -1,0 +1,104 @@
+@use 'variables';
+@use 'mixins/mixins';
+//COVER BG
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//OWL CAROUSEL
+.owl-carousel {
+    position: relative;
+    ;
+    .owl-item {
+        width: 500px !important;
+        opacity: 1;
+        &.active {
+            opacity: 1;
+        }
+    }
+    .owl-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            transform: translateY(-50%);
+            margin-top: -10px;
+            color: rgba(0, 0, 0, .2) !important;
+            @include mixins.transition(.7s);
+            span {
+                &:before {
+                    font-size: 16px;
+                    @include mixins.transition(.3s);
+                }
+            }
+            opacity: 1;
+            &:hover {
+                span {
+                    &:before {
+                        color: variables.$orange;
+                    }
+                }
+            }
+        }
+        .owl-prev {
+            right: 0;
+            margin-right: 20px;
+        }
+        .owl-next {
+            right: 0;
+        }
+    }
+    .owl-dots {
+        text-align: left;
+        margin-top: 10px;
+        .owl-dot {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: rgba(0, 0, 0, .1);
+            position: relative;
+            &:hover,
+            &:focus {
+                outline: none !important;
+            }
+            &.active {
+                background: variables.$orange;
+            }
+        }
+    }
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+//WORK
+.work {
+    width: 100%;
+    .img {
+        width: 450px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+        box-shadow: 0px 20px 35px -30px rgba(0, 0, 0, 0.26);
+        z-index: 0;
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            z-index: -1;
+            @include mixins.gradient-background();
+            opacity: .6;
+        }
+    }
+    
+}
