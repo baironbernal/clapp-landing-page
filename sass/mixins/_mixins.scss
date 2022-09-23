@@ -1,14 +1,14 @@
 @use '../variables' as v;
 
 
-@mixin button($padding-x, $padding-y, $background, $color, $font-size, $height) {
+@mixin button($padding-x, $padding-y, $background, $color, $font-size, $height, $width) {
     background-color: $background;
     border: none;
     border-radius: 15px;
     color: $color;
     padding: $padding-y $padding-x;
     height: $height;
-    width: auto;
+    width: $width;
     font-size: $font-size;
     font-weight: 700;
     display: flex;

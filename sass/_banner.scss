@@ -8,6 +8,7 @@
     background-size: cover;
     width: 100%;
     height: 1200px;
+    position: relative;
 }
 
 .banner {
@@ -23,6 +24,6 @@
     }
 
     &__button {
-      @include mixins.button(20px, 20px, variables.$dark-button, variables.$white, 22px, 4em);
+      @include mixins.button(20px, 20px, variables.$dark-button, variables.$white, 22px, 4em, auto);
     }
 }

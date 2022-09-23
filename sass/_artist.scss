@@ -1,0 +1,27 @@
+@use 'variables';
+@use 'mixins/mixins';
+
+
+
+.artist {
+      text-align: center;
+     &__p-first {
+            font-size: 30px;
+            margin-bottom: 20px;
+     }
+
+     &__p-last {
+      font-size: 23px;
+     }
+
+     h1{
+      font-size: 90px;
+     }
+
+     &__button {
+      @include mixins.button(15px, 20px, variables.$orange, variables.$white, 22px, 4em, 260px);
+      margin: 0 auto;
+    }
+
+      
+}

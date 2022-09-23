@@ -2,7 +2,8 @@
 @use 'banner';
 @use 'variables';
 @use 'header';
-@use 'navbar';
+@use 'clapp';
+@use 'artist';
 @use 'mixins/mixins';
 
 .main-container{  

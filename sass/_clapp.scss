@@ -1,0 +1,69 @@
+@use 'variables';
+
+
+.clapp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      &__details {
+            margin-left: 9%;
+            width: 600px;
+            & h3 {
+                  font-size: 42px;
+            }
+      }
+
+      &__download{
+            font-size: 30px;
+      }
+
+      &__white, &__orange{
+            font-size: 90px;
+      }
+
+      &__white {
+            color: variables.$white;
+      }
+
+      &__orange {
+            color: variables.$orange;
+      }
+
+      &__devices {
+            display: flex;
+            padding: 20px 0px;
+            img {
+                  width: 200px;
+            }
+      }
+
+      &__advantages {
+            padding: 30px;
+      }
+
+      &__advantage{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            & img {
+                  width: 100px;
+            }
+      }
+
+      &__advantage-right{
+            padding: 20px 35px;
+            span {
+                  font-size: 29px;
+                  font-weight: 700;
+            }
+            p{
+                  font-size: 16px;
+            }
+            
+      }
+
+      
+}

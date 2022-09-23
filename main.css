@@ -20,6 +20,7 @@ a {
   background-size: cover;
   width: 100%;
   height: 1200px;
+  position: relative;
 }
 
 .banner__description {
@@ -57,11 +58,10 @@ a {
 }
 
 .header {
-  width: 70%;
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
   padding: 0 4em;
   position: relative;
 }
@@ -80,17 +80,18 @@ a {
   margin-left: 1em;
 }
 .header__navigation {
-  width: 174px;
+  width: auto;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: 700;
+  width: 900px;
 }
-@media (min-width: 1300px) {
-  .header__navigation {
-    width: 590px;
-  }
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
 }
 .header__menu:hover {
   cursor: pointer;
@@ -101,9 +102,6 @@ a {
   }
 }
 
-.navbar {
-  width: 400px;
-}
 .navbar__items {
   list-style: none;
   display: flex;
@@ -130,7 +128,6 @@ a {
   justify-content: center;
   gap: 16px;
   text-decoration: none;
-  margin-left: 40px;
 }
 .navbar__link-register {
   background-color: #F89C1C;
@@ -156,6 +153,90 @@ a {
   .navbar {
     display: block;
   }
+}
+
+.clapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clapp__details {
+  margin-left: 9%;
+  width: 600px;
+}
+.clapp__details h3 {
+  font-size: 42px;
+}
+.clapp__download {
+  font-size: 30px;
+}
+.clapp__white, .clapp__orange {
+  font-size: 90px;
+}
+.clapp__white {
+  color: hsl(0deg, 0%, 100%);
+}
+.clapp__orange {
+  color: #F89C1C;
+}
+.clapp__devices {
+  display: flex;
+  padding: 20px 0px;
+}
+.clapp__devices img {
+  width: 200px;
+}
+.clapp__advantages {
+  padding: 30px;
+}
+.clapp__advantage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clapp__advantage img {
+  width: 100px;
+}
+.clapp__advantage-right {
+  padding: 20px 35px;
+}
+.clapp__advantage-right span {
+  font-size: 29px;
+  font-weight: 700;
+}
+.clapp__advantage-right p {
+  font-size: 16px;
+}
+
+.artist {
+  text-align: center;
+}
+.artist__p-first {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.artist__p-last {
+  font-size: 23px;
+}
+.artist h1 {
+  font-size: 90px;
+}
+.artist__button {
+  background-color: #F89C1C;
+  border: none;
+  border-radius: 15px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px 15px;
+  height: 4em;
+  width: 260px;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 .main-container {
