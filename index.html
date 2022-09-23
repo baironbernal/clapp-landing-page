@@ -15,100 +15,41 @@
     <div class="announcement">
       Registrate y organiza tus lanzamientos y comparte tu musica con todo el mundo
     </div>
-    <header class="header">
-      <div class="header__left-logo">
-        <img class="header__logo" src="./images/logo.svg" alt="Logo">
-        <span>videos, musica y conciertos</span>
-      </div>
-      <div class="header__navigation">
-        <nav class="navbar">
-          <ul class="navbar__items">
-            <li><a href="#" class="navbar__link">Artistas</a></li>
-            <li><a href="#" class="navbar__link">Conciertos</a></li>
-            <li><a href="#" class="navbar__link">Lanzamientos</a></li>
-            <li><a href="#" class="navbar__link">App</a></li>
-            <li><a href="#" class="navbar__link-access">Acceder</a></li>
-            <li><a href="#" class="navbar__link-register">Registrate</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="background">
+      <header class="header">
+        <div class="header__left-logo">
+          <img class="header__logo" src="./images/logo.svg" alt="Logo">
+          <span>videos, musica y conciertos</span>
+        </div>
+        <div class="header__navigation">
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li><a href="#" class="navbar__link">Artistas</a></li>
+              <li><a href="#" class="navbar__link">Conciertos</a></li>
+              <li><a href="#" class="navbar__link">Lanzamientos</a></li>
+              <li><a href="#" class="navbar__link">App</a></li>
+              <li><a href="#" class="navbar__link-access">Acceder</a></li>
+              <li><a href="#" class="navbar__link-register">Registrate</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--end header main-->
       
-      <!-- modal navbar -->
-      <div class="modal-navbar__background" id="modal-navbar__background">
-        <nav class="modal-navbar">
-          <img src="./images/icon-close.svg" alt="close" class="modal-navbar__close-icon" id="modal-navbar__close-icon">
-          <ul class="modal-navbar__items">
-            <li><a href="#" class="modal-navbar__link">Collections</a></li>
-            <li><a href="#" class="modal-navbar__link">Men</a></li>
-            <li><a href="#" class="modal-navbar__link">Women</a></li>
-            <li><a href="#" class="modal-navbar__link">About</a></li>
-            <li><a href="#" class="modal-navbar__link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-       <!-- final modal navbar -->
-
-       <div class="header__cart-avatar">
-          <div class="header__cart" id="header__cart">
-            <div class="header__cart--notification">3</div>
-            <img src="./images/icon-cart.svg" alt="cart">
-          </div>
-          <img class="header__avatar" src="./images/image-avatar.png" alt="avatar">
-       </div>
-    </header>
-    <!--end header main-->
+      <!--Banner-->
+      <section class="banner">
+  
+        <div class="banner__description">
+          <p>
+            Promociona tus eventos a nivel nacional y salta del estrellato.
+             Recibe tu dinero al instante
+          </p>
     
-    <!--Content Main - View Producto Gallery and detail (price, discounts, before price)-->
-    <section class="content">
-
-      <h3>Comienza a promocionarte</h3>
-      <h1>CONCIERTOS</h1>
-      <p>
-        Promociona tus eventos a nivel nacional y salta del estrellato.
-         Recibe tu dinero al instante
-      </p>
-
-      <a href="#" class="content__button">Registrate y publica</a>
-    </section>
-    <!--End Content Main - View Producto Gallery and detail (price, discounts, before price)-->
-
-    <!--Cart Modal when click in cart icon-->
-    <div class="cart-modal" id="cart-modal">
-      <p class="cart-modal__title">Cart</p>
-      <div class="cart-modal__checkout-container">
-          <div class="cart-modal__details-container">
-            <img class="cart-modal__image" src="./images/image-product-1-thumbnail.jpg" alt="">
-            <div>
-              <p class="cart-modal__product">
-                Autumn Limited Edition
-              </p>
-              <p class="cart-modal__price">
-                $125 x3 <span>$375.00</span>
-              </p>
-            </div>
-            <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="trash">
-          </div>
-          <button class="cart-modal__checkout-button">Checkout</button>
-      </div>
-    </div>
-    <!--End Cart Modal when click in cart icon-->
-
-    <!--Gallery Modal Desktop slide-->
-    <div class="modal-gallery__background" id="modal-gallery__background">
-      <article class="modal-gallery">
-        <div class="modal-gallery__image-container">
-          <img class="modal-gallery__previus" src="./images/icon-previous.svg" alt="previuous">
-          <img class="modal-gallery__next" src="./images/icon-next.svg" alt="next">
+          <a href="#" class="banner__button">Registrate y publica</a>
         </div>
-        <div class="modal-gallery__thumnails">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="" id="m1" class="modal-gallery__thumnail">
-          <img src="./images/image-product-2-thumbnail.jpg" alt="" id="m2" class="modal-gallery__thumnail">
-          <img src="./images/image-product-3-thumbnail.jpg" alt="" id="m3" class="modal-gallery__thumnail">
-          <img src="./images/image-product-4-thumbnail.jpg" alt="" id="m4" class="modal-gallery__thumnail">
-        </div>
-      </article>
+      </section>
+      <!--End Banner-->
     </div>
-    <!--End gallery Modal Desktop slide-->
   </main>
 
   <footer class="attribution">
@@ -116,6 +57,4 @@
     Coded by <a href="https://www.linkedin.com/in/bernalbairon" target="_blank">Bairon Bernal Gonzalez</a>.
   </footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/functions.js"></script>
 </html>

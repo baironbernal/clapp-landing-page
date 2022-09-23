@@ -1,29 +1,18 @@
 @use 'initial';
+@use 'banner';
 @use 'variables';
 @use 'header';
 @use 'navbar';
-@use 'modal-navbar';
-@use 'gallery';
-@use 'details';
-@use 'input';
-@use 'modal-cart';
-@use 'modal-gallery';
 @use 'mixins/mixins';
 
 .main-container{  
-      width: 375px;
+      width: 100%;
       margin: auto;
       position: relative;
       @media(min-width: 1115px) {
-            width: 70%;
+            width: 100%;
       }
-}
-
-.opacity{
-      position: unset;
-}
-.active {
-      display: block !important;
+      
 }
 
 

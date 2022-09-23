@@ -1,27 +1,30 @@
 @use 'variables';
-
+@use 'mixins/mixins';
 .navbar {
-      display: none;
-      width: 400px;
-      &__items{
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-      }
-      &__link {
-            text-decoration: none;
-            color: variables.$dark-grayish-blue;
-            display: block;
-            height: 112px;
-            padding-top: 42px;
-            padding-left: 15px;
-            padding-right: 15px;
-            &:hover{
-                  border-bottom: 4px solid variables.$orange;
-            }
-      }
-
-      @media(min-width: variables.$width-desktop) {
-            display: block;
-      }
+    width: 400px;
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        text-decoration: none;
+        height: auto;
+        padding-left: 22px;
+        padding-right: 22px;
+        &-access {
+            @include mixins.button(15px, 5px, variables.$dark-button, variables.$white, 22px, auto);
+            margin-left: 40px;
+        }
+        &-register {
+            @include mixins.button(15px, 5px, variables.$orange, variables.$white, 22px, auto);
+            margin-left: 20px;
+        }
+        &:hover {
+            border-bottom: 4px solid variables.$orange;
+        }
+    }
+    @media(min-width: variables.$width-desktop) {
+        display: block;
+    }
 }

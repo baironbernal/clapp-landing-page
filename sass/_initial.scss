@@ -10,4 +10,10 @@
 
 body {
       font-family: variables.$font;
+      background-color: variables.$black;
+      color: variables.$white;
+}
+
+a {
+      color: variables.$white;
 }
