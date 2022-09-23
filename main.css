@@ -354,6 +354,10 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff5db1", endColorstr="#000000", GradientType=0 );
   opacity: 0.6;
 }
+.work .ticket {
+  width: 567px !important;
+  height: 300px !important;
+}
 
 .carrusel__info {
   padding: 20px;
@@ -425,6 +429,7 @@ a {
 
 .concerts {
   margin-top: 8em;
+  margin-bottom: 8em;
   display: flex;
   justify-content: space-between;
 }
@@ -458,6 +463,43 @@ a {
   text-decoration: none;
   margin-top: 20px;
   font-weight: normal;
+}
+
+.footer__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.footer__logo span {
+  display: block;
+  font-size: 15px;
+}
+.footer__links {
+  padding: 20px;
+  display: inline-block;
+}
+.footer__links h3 {
+  font-size: 32px;
+}
+.footer__links ul {
+  list-style-type: none;
+}
+.footer__links a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 25px;
+  font-size: 15px;
+}
+
+.border {
+  border-left: 2px solid #EBEBEB;
+  padding-left: 45px;
 }
 
 .main-container {

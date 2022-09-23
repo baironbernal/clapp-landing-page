@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
 }
 
+
+
 //OWL CAROUSEL
 .owl-carousel {
     position: relative;
@@ -99,6 +101,11 @@
             @include mixins.gradient-background();
             opacity: .6;
         }
+    }
+
+    .ticket {
+        width: 567px !important;
+        height: 300px !important;
     }
 }
 
