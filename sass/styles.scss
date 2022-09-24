@@ -31,6 +31,14 @@
       }
 
 
+      #ticket {
+            height: 400px !important;
+            @media(max-width: variables.$width-mobile) {
+                height: 350px !important;
+          }
+        }
+
+
 }
 
 
