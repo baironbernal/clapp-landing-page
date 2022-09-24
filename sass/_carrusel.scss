@@ -6,12 +6,15 @@
     background-repeat: no-repeat;
 }
 
-
+.owl-stage-outer {
+    @media(max-width: variables.$width-mobile) {
+        height: 770px !important;
+  }
+}
 
 //OWL CAROUSEL
 .owl-carousel {
     position: relative;
-    ;
     .owl-item {
         width: 500px !important;
         opacity: 1;

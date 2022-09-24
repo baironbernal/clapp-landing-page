@@ -1,0 +1,43 @@
+@use 'variables';
+@use 'mixins/mixins';
+
+.modal-navbar {
+    &__background {
+        @include mixins.modal-background;
+        display: none;
+
+        @media(max-width: variables.$width-mobile) {
+            display: none;
+        }
+    }
+    background-color: variables.$dark-button;
+    width: 70%;
+    height: 100vh;
+    padding: 28px 24px;
+    display: none;
+    @media(max-width: variables.$width-mobile) {
+      display: block;
+    }
+    //display: none;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+        margin-top: 50px;
+    }
+    &__link {
+        text-decoration: none;
+        color: variables.$white;
+        font-weight: 700;
+        font-size: 1.1em;
+        
+    }
+
+    
+    
+    &__close-icon:hover{
+      cursor: pointer;
+    }
+}

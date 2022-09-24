@@ -10,16 +10,30 @@
             width: 1000px;
             margin: 0 auto;
             padding: 25px;
+
+            @media(max-width: v.$width-mobile) {
+                  flex-direction: column;
+                  width: auto;
+            }
       }
 
       &__logo span{
             display: block;
             font-size: 15px;
+            @media(max-width: v.$width-mobile) {
+                  margin-bottom: 20px !important;
+            }
       } 
 
       &__links{
             padding: 20px;
             display: inline-block;
+
+            @media(max-width: v.$width-mobile) {
+                  padding: 20px !important;
+                  text-align: center;
+            }
+            
             h3{
                   font-size: 32px;
             }
@@ -30,6 +44,9 @@
             a {
                   text-decoration: none;
                   font-size: 20px;
+            }
+            @media(max-width: v.$width-mobile) {
+                  padding: 0;   
             }
       }
 
@@ -44,6 +61,12 @@
 .border {
       border-left: 2px solid v.$gray;
       padding-left: 45px;
+
+      @media(max-width: v.$width-mobile) {
+            border: 0;
+            padding: 0;
+            width: auto;
+      }
 }
 
 

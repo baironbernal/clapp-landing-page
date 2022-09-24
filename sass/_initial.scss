@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
@@ -9,11 +9,44 @@
 }
 
 body {
-      font-family: variables.$font;
-      background-color: variables.$black;
-      color: variables.$white;
+      font-family: v.$font;
+      background-color: v.$black;
+      color: v.$white;
 }
 
-a {
-      color: variables.$white;
+body, html {
+      min-width: 100%;
 }
+
+p, a, span{
+      @media(max-width: v.$width-mobile) {
+            font-size: v.$title-default-mobile !important;   
+   
+      }
+}
+
+h1{
+      @media(max-width: v.$width-mobile) {
+            font-size: v.$title-big-mobile !important;   
+      } 
+}
+
+h1 > span{
+      @media(max-width: v.$width-mobile) {
+            font-size: v.$title-big-mobile !important;   
+      } 
+}
+
+h3 {
+      @media(max-width: v.$width-mobile) {
+            font-size: v.$title-medium-mobile !important;   
+      } 
+}
+
+
+
+a {
+      color: v.$white;
+}
+
+

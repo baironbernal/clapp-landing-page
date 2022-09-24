@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins/mixins';
 .artist {
     text-align: center;
@@ -14,9 +14,14 @@
     h1 {
         font-size: 90px;
         margin-bottom: 20px;
+
+        @media(max-width: v.$width-mobile) {
+            margin-top: 20px;
+            font-size: 35px !important;
+      } 
     }
     &__button {
-        @include mixins.button(15px, 20px, variables.$orange, variables.$white, 22px, 4em, 260px);
+        @include mixins.button(15px, 20px, v.$orange, v.$white, 22px, 4em, 260px);
         margin: 0 auto;
     }
 }

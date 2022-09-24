@@ -1,4 +1,5 @@
 @use 'initial';
+@use 'modal-navbar';
 @use 'banner';
 @use 'variables';
 @use 'header';
@@ -8,16 +9,28 @@
 @use 'latest';
 @use 'concerts';
 @use 'footer';
+@use 'shared';
 @use 'mixins/mixins';
 
 .main-container{  
       width: 100%;
       margin: auto;
       position: relative;
-      @media(min-width: 1115px) {
-            width: 100%;
+      @media(max-width: variables.$width-mobile) {
+            .announcement {
+                  display: none;
+            }
+
       }
       
+
+      .clapp__image{
+            @media(max-width: variables.$width-mobile) {
+                  display: none;
+              }
+      }
+
+
 }
 
 

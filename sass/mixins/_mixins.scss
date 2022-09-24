@@ -1,6 +1,17 @@
 @use '../variables' as v;
 
 
+@mixin modal-background {
+  background-color: v.$black-modal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 1;
+}
+
+
 @mixin button($padding-x, $padding-y, $background, $color, $font-size, $height, $width) {
     background-color: $background;
     border: none;

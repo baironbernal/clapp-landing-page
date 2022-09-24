@@ -11,8 +11,81 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 
+body, html {
+  min-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  p, a, span {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 > span {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  h3 {
+    font-size: 18px !important;
+  }
+}
+
 a {
   color: hsl(0deg, 0%, 100%);
+}
+
+.modal-navbar {
+  background-color: #150E29;
+  width: 70%;
+  height: 100vh;
+  padding: 28px 24px;
+  display: none;
+}
+.modal-navbar__background {
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+@media (max-width: 1000px) {
+  .modal-navbar__background {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .modal-navbar {
+    display: block;
+  }
+}
+.modal-navbar__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  list-style: none;
+  margin-top: 50px;
+}
+.modal-navbar__link {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.modal-navbar__close-icon:hover {
+  cursor: pointer;
 }
 
 .background {
@@ -22,6 +95,14 @@ a {
   width: 100%;
   height: 1200px;
   position: relative;
+}
+@media (max-width: 1000px) {
+  .background {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    height: 350px;
+    position: relative;
+  }
 }
 
 .banner__description {
@@ -33,6 +114,23 @@ a {
 }
 .banner__description p {
   margin-bottom: 25px;
+}
+@media (max-width: 1000px) {
+  .banner__description p {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 1000px) {
+  .banner__description {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    top: unset;
+    right: unset;
+    margin: 0 auto;
+    justify-content: center;
+    width: 250px;
+  }
 }
 .banner__button {
   background-color: #150E29;
@@ -50,6 +148,11 @@ a {
   gap: 16px;
   text-decoration: none;
 }
+@media (max-width: 1000px) {
+  .banner__button {
+    font-size: 20px !important;
+  }
+}
 
 .announcement {
   background-color: rgb(30, 26, 52);
@@ -66,9 +169,12 @@ a {
   padding: 0 4em;
   position: relative;
 }
-@media (min-width: 1300px) {
+@media (max-width: 1000px) {
   .header {
+    width: auto;
     height: 140px;
+    margin: 0 auto;
+    display: block;
   }
 }
 .header__left-logo {
@@ -80,6 +186,13 @@ a {
   display: block;
   margin-left: 1em;
 }
+@media (max-width: 1000px) {
+  .header__left-logo {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+}
 .header__navigation {
   width: auto;
   height: 100%;
@@ -88,6 +201,11 @@ a {
   justify-content: center;
   font-weight: 700;
   width: 900px;
+}
+@media (max-width: 1000px) {
+  .header__navigation {
+    display: none;
+  }
 }
 .header__buttons {
   display: flex;
@@ -160,6 +278,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .clapp {
+    margin-top: 45px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .clapp__details {
   margin-left: 9%;
@@ -167,6 +293,10 @@ a {
 }
 .clapp__details h3 {
   font-size: 42px;
+}
+.clapp__image img {
+  width: 700px;
+  min-height: auto;
 }
 .clapp__download {
   font-size: 30px;
@@ -186,6 +316,11 @@ a {
 }
 .clapp__devices img {
   width: 200px;
+}
+@media (max-width: 1000px) {
+  .clapp__devices img {
+    width: 170px;
+  }
 }
 .clapp__advantages {
   padding: 30px;
@@ -225,6 +360,12 @@ a {
   font-size: 90px;
   margin-bottom: 20px;
 }
+@media (max-width: 1000px) {
+  .artist h1 {
+    margin-top: 20px;
+    font-size: 35px !important;
+  }
+}
 .artist__button {
   background-color: #F89C1C;
   border: none;
@@ -246,6 +387,12 @@ a {
 .img {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1000px) {
+  .owl-stage-outer {
+    height: 770px !important;
+  }
 }
 
 .owl-carousel {
@@ -433,8 +580,23 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1000px) {
+  .concerts {
+    margin-top: 0;
+  }
+}
 .concerts__left {
   padding: 0px 7em;
+}
+@media (max-width: 1000px) {
+  .concerts__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0 10%;
+  }
 }
 .concerts__title {
   display: flex;
@@ -464,6 +626,15 @@ a {
   margin-top: 20px;
   font-weight: normal;
 }
+.concerts__image img {
+  max-width: 600px;
+  min-height: auto;
+}
+@media (max-width: 1000px) {
+  .concerts__image img {
+    display: none;
+  }
+}
 
 .footer__main {
   display: flex;
@@ -473,13 +644,30 @@ a {
   margin: 0 auto;
   padding: 25px;
 }
+@media (max-width: 1000px) {
+  .footer__main {
+    flex-direction: column;
+    width: auto;
+  }
+}
 .footer__logo span {
   display: block;
   font-size: 15px;
 }
+@media (max-width: 1000px) {
+  .footer__logo span {
+    margin-bottom: 20px !important;
+  }
+}
 .footer__links {
   padding: 20px;
   display: inline-block;
+}
+@media (max-width: 1000px) {
+  .footer__links {
+    padding: 20px !important;
+    text-align: center;
+  }
 }
 .footer__links h3 {
   font-size: 32px;
@@ -491,6 +679,11 @@ a {
   text-decoration: none;
   font-size: 20px;
 }
+@media (max-width: 1000px) {
+  .footer__links {
+    padding: 0;
+  }
+}
 .footer__copyright {
   text-align: center;
   padding: 25px;
@@ -501,15 +694,32 @@ a {
   border-left: 2px solid #EBEBEB;
   padding-left: 45px;
 }
+@media (max-width: 1000px) {
+  .border {
+    border: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
+.devices__google, .devices__ios {
+  height: auto;
+  width: auto;
+}
 
 .main-container {
   width: 100%;
   margin: auto;
   position: relative;
 }
-@media (min-width: 1115px) {
-  .main-container {
-    width: 100%;
+@media (max-width: 1000px) {
+  .main-container .announcement {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .main-container .clapp__image {
+    display: none;
   }
 }
 
